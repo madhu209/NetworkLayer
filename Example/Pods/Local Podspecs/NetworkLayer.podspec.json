@@ -1,0 +1,22 @@
+{
+  "name": "NetworkLayer",
+  "version": "0.1.0",
+  "summary": "A short description of NetworkLayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/madhusudhanivy/NetworkLayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "madhusudhanivy": "44475717+madhu209@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/madhusudhanivy/NetworkLayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "NetworkLayer/Classes/**/*"
+}
