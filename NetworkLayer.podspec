@@ -28,9 +28,17 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/madhusudhanivy/NetworkLayer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
-  s.source_files = 'NetworkLayer/Classes/**/*'
+  s.source_files = 'NetworkLayer/**/*.{h,m,swift,xib,storyboard}'
+
+  s.resource_bundles = {
+    'NetworkLayer' => ['NetworkLayer/**/*.xib', 'NetworkLayer/**/*.storyboard', 'NetworkLayer/**/*.xcassets', 'NetworkLayer/*.lproj/*.strings', 'NetworkLayer/**/*.strings', 'NetworkLayer/**/*.json']
+  }
+  s.swift_version = '5.0'
+  s.platforms = {
+    "ios": "13.0"
+  }
   
   # s.resource_bundles = {
   #   'NetworkLayer' => ['NetworkLayer/Assets/*.png']
