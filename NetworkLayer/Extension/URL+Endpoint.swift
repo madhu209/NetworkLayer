@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 extension URL {
     public static func with(baseUrl: String, endPoint: String) -> URL {
         guard let url = URL(string: baseUrl + endPoint) else {

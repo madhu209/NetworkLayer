@@ -7,6 +7,8 @@
 
 import Foundation
 
+/* Protocols provide a blueprint for Methods, properties and other requirements functionality. It is just described as a methods or properties skeleton instead of implementation. Methods and properties implementation can further be done by defining classes, functions and enumerations. */
+
 protocol HTTPHeaders {
     var defaultHeaders: [String: String] { get }
     var headers: [String: String] { get set }
