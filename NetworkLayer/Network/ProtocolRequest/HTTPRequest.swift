@@ -43,7 +43,3 @@ public struct URLHTTPRequest: HTTPRequest {
         self.headers = headers
     }
 }
-
-public struct Empty: Encodable {
-    public init() { }
-}
