@@ -12,11 +12,23 @@
     "madhusudhanivy": "44475717+madhu209@users.noreply.github.com"
   },
   "source": {
-    "git": "https://github.com/madhusudhanivy/NetworkLayer.git",
+    "git": "https://github.com/madhusudhan209/NetworkLayer.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "14.0"
   },
-  "source_files": "NetworkLayer/Classes/**/*"
+  "source_files": "NetworkLayer/**/*.{h,m,swift,xib,storyboard}",
+  "resource_bundles": {
+    "NetworkLayer": [
+      "NetworkLayer/**/*.xib",
+      "NetworkLayer/**/*.storyboard",
+      "NetworkLayer/**/*.xcassets",
+      "NetworkLayer/*.lproj/*.strings",
+      "NetworkLayer/**/*.strings",
+      "NetworkLayer/**/*.json"
+    ]
+  },
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }

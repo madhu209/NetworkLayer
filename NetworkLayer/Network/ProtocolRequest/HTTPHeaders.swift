@@ -15,11 +15,11 @@ protocol HTTPHeaders {
     func setHeader(value: String, key: String)
 }
 
-public class Header: HTTPHeaders {
+open class Header: HTTPHeaders {
 
     public init() {}
 
-    public var defaultHeaders: [String : String] = [HeaderFieldKeys.contentType: HeaderFieldValues.contentType]
+    var defaultHeaders: [String : String] = [HeaderFieldKeys.contentType: HeaderFieldValues.contentType]
 
     public var headers: [String: String] = [:] {
         willSet(newHeaders) {

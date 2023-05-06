@@ -13,7 +13,7 @@ open class NetworkController {
 
     }
 
-    public func fetchResponse<ModelType: Decodable>(url: URL, queryItems: [URLQueryItem]?, headers: [String: String] = Header().headers, body: JSONBody, method: URLRequest.HTTPMethod, completion: @escaping (Result<ModelType, Error>) -> Void) {
+    public func fetchResponse<ModelType: Decodable>(url: URL, queryItems: [URLQueryItem]?, headers: [String: String] = Header().headers, body: JSONBody = JSONBody(Empty()), method: URLRequest.HTTPMethod, completion: @escaping (Result<ModelType, Error>) -> Void) {
 
         guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return }
         if urlComponents.queryItems == nil {
